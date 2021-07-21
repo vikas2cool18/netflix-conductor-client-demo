@@ -13,7 +13,8 @@
 		"responseTimeoutSeconds": 600,
 		"concurrentExecLimit": 100,
 		"rateLimitFrequencyInSeconds": 60,
-		"rateLimitPerFrequency": 50
+		"rateLimitPerFrequency": 50,
+		"ownerEmail": "vikas_bharti@gmail.com"
 	},
 	{
 		"name": "dotnetprocess2",
@@ -29,6 +30,7 @@
 		"responseTimeoutSeconds": 600,
 		"concurrentExecLimit": 100,
 		"rateLimitFrequencyInSeconds": 60,
-		"rateLimitPerFrequency": 50
+		"rateLimitPerFrequency": 50,
+		"ownerEmail": "vikas_bharti@gmail.com"
 	}
 ]

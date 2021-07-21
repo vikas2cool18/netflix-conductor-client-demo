@@ -1,30 +1,31 @@
+/*
 package com.netflix.conductor.client.demo.config;
 
 import java.util.concurrent.atomic.AtomicBoolean;
 
+import com.netflix.conductor.client.automator.TaskRunnerConfigurer;
 import org.springframework.context.SmartLifecycle;
 import org.springframework.context.annotation.Configuration;
-
-import com.netflix.conductor.client.task.WorkflowTaskCoordinator;
 
 @Configuration
 public class ConductorLifecycle implements SmartLifecycle {
 
 	AtomicBoolean isRunning = new AtomicBoolean(false);
-    WorkflowTaskCoordinator taskCoordinator;
-    public ConductorLifecycle(WorkflowTaskCoordinator workflowTaskCoordinator) {
-        this.taskCoordinator = workflowTaskCoordinator;
+   // WorkflowTaskCoordinator taskCoordinator;
+    TaskRunnerConfigurer taskRunnerConfigurer;
+    public ConductorLifecycle(TaskRunnerConfigurer taskRunnerConfigurer) {
+        this.taskRunnerConfigurer = taskRunnerConfigurer;
     }
 
     @Override
     public void start() {
     	System.out.println("Starting taskCoord");
-        taskCoordinator.init();;
+        taskRunnerConfigurer.init();;
     }
 
     @Override
     public void stop() {
-    taskCoordinator.shutdown();
+        taskRunnerConfigurer.shutdown();
     }
 
     @Override
@@ -32,3 +33,4 @@ public class ConductorLifecycle implements SmartLifecycle {
         return isRunning.get();
     }
 }
+*/

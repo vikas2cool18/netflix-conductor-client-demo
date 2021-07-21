@@ -1,6 +1,7 @@
 {
 	"name": "lang-decision-workflow",
 	"version": 1,
+	"ownerEmail": "vikas_bharti@gmail.com",
 	"tasks": [
 		{
 			"name": "lang-decision",
